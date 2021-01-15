@@ -27,7 +27,7 @@ That's all. Now you can use both `make` and `make help` commands. No additional 
 Add comments to all public tasks. You can use multi-line comments as well as code examples in `` `backticks` ``.
 No special syntax required, just use single `#` as usual.
 
-Thanks to @muuvmuuv (#1), you can also add sections to a large `Makefile` like this:
+Thanks to [@muuvmuuv](https://github.com/muuvmuuv) ([#1](https://github.com/Xanders/make-help/issues/1)), you can also add sections to a large `Makefile` like this:
 
 ```make
 ##
@@ -59,7 +59,7 @@ So we grab current `Makefile` and push to the container with a program.
 It processes the file and outputs usage help with the tasks comments.
 
 The image [is built from scratch](https://docs.docker.com/develop/develop-images/baseimages/#create-a-simple-parent-image-using-scratch)
-and is as small as even possible in Docker: 926.96 **KB** compressed (two layers).
+and is as small as even possible in Docker: 929.62 **KB** compressed (two layers).
 
 I used [extra-fast](https://github.com/kostya/crystal-benchmarks-game) [Crystal programming language](https://crystal-lang.org) with [static linking](https://crystal-lang.org/reference/using_the_compiler/index.html#creating-a-statically-linked-executable) on [Alpine-based compiler](https://crystal-lang.org/2020/02/02/alpine-based-docker-images.html) at [build stage](https://docs.docker.com/develop/develop-images/multistage-build).
 
