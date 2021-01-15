@@ -27,6 +27,14 @@ That's all. Now you can use both `make` and `make help` commands. No additional 
 Add comments to all public tasks. You can use multi-line comments as well as code examples in `` `backticks` ``.
 No special syntax required, just use single `#` as usual.
 
+Thanks to @muuvmuuv (#1), you can also add sections to a large `Makefile` like this:
+
+```make
+##
+## Section name (one line)
+##
+```
+
 **Please see the example in [this project `Makefile`](Makefile).**
 
 ![Screenshot with this project help output](screenshot.png)

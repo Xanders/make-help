@@ -13,6 +13,10 @@ build:
 # Run `build` and `help` successively
 test: build help
 
+##
+## Section for authorized contributors
+##
+
 # Push image to `https://hub.docker.com`
 push:
 	docker push xanders/make-help
