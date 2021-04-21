@@ -2,7 +2,7 @@ def make_help(input)
   sections = input.scan(/(?:##\s*\n## ([^\n]+?)\s*\n##\s*\n|\A)(.+?)(?=\z|\n##\s*\n## [^\n]+\n##\s*\n)/m)
 
   sections_with_goals = sections.map do |match|
-    {match[1]?, match[2].scan(/((?:^# [^\n]+\n)+)^([^#:]+):/m)}
+    {match[1]?, match[2].scan(/((?:^# [^\n]+\n)+)^([^#:\n]+):(?!=)/m)}
   end
 
   commands = sections_with_goals.map(&.last).flatten.map(&.[2])

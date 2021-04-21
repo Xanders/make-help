@@ -1,6 +1,6 @@
 ﻿# Build
 
-FROM crystallang/crystal:0.35.1-alpine as builder
+FROM crystallang/crystal:1.0.0-alpine as builder
 
 COPY make-help.cr /make-help.cr
 
