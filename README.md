@@ -59,7 +59,7 @@ So we grab current `Makefile` and push to the container with a program.
 It processes the file and outputs usage help with the tasks comments.
 
 The image [is built from scratch](https://docs.docker.com/develop/develop-images/baseimages/#create-a-simple-parent-image-using-scratch)
-and is as small as even possible in Docker: 929.62 **KB** compressed (two layers).
+and is as small as even possible in Docker: 932.34 **KB** compressed (two layers).
 
 I used [extra-fast](https://github.com/kostya/crystal-benchmarks-game) [Crystal programming language](https://crystal-lang.org) with [static linking](https://crystal-lang.org/reference/using_the_compiler/index.html#creating-a-statically-linked-executable) on [Alpine-based compiler](https://crystal-lang.org/2020/02/02/alpine-based-docker-images.html) at [build stage](https://docs.docker.com/develop/develop-images/multistage-build).
 
