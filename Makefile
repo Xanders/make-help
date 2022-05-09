@@ -3,14 +3,16 @@
 # When it's first, both commands works:
 # `make`
 # `make help`
+.PHONY: help
 help:
-	@cat $(MAKEFILE_LIST) | docker run --rm -i xanders/make-help
+	@cat $(MAKEFILE_LIST) | grep -v 'PHONY' | docker run --rm -i xanders/make-help
 
 # Build Docker image
 build:
 	docker build -t xanders/make-help .
 
 # Run `build` and `help` successively
+.PHONY: test
 test: build help
 
 ##
